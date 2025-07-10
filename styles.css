@@ -1,0 +1,262 @@
+/*/* charity: water Brand Colors & Fonts
+
+Primary Colors:
+- Yellow:     #FFC907
+- Blue:       #2E9DF7
+
+Secondary Colors:
+- Light Blue: #8BD1CB
+- Green:      #4FCB53
+- Orange:     #FF902A
+- Red:        #F5402C
+- Dark Green: #159A48
+- Pink:       #F16061
+
+Fonts:
+- Proxima Nova
+- Avenir
+
+*/
+
+/* 
+  Charity: Water Landing Page Styles
+  This CSS uses the provided color palette and beginner-friendly styles.
+*/
+
+/* charity: water Brand Colors & Fonts */
+body {
+  background-color: #f4f8fb; /* Soft light blue for a fresh look */
+  font-family: 'Avenir', 'Proxima Nova', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #222;
+}
+
+
+
+/* Section styles */
+section {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(46, 157, 247, 0.07);
+  margin: 24px 10px;
+  padding: 24px 16px;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  background-image: url('img/charity_water.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: left;
+  padding: 80px 20px;
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 0 0 16px 16px;
+}
+
+.hero-content {
+  max-width: 500px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.hero p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+}
+
+.donate-btn {
+  background-color: #FFC907; /* Primary Yellow */
+  color: black;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+
+.donate-btn:hover {
+  background-color: #FF902A; /* Orange */
+}
+
+/* About Section (your story) */
+.about {
+  background-color: #8BD1CB; /* Secondary Light Blue */
+  color: #222;
+  text-align: center;
+  padding: 60px 20px;
+  border-radius: 12px;
+}
+
+.about h2 {
+  color: #2E9DF7; /* Primary blue */
+  margin-top: 0;
+  font-weight: bold;
+}
+
+/* Story Section (impact story) */
+.story {
+  padding: 60px 20px;
+}
+
+.story h2 {
+  color: #2E9DF7; /* Primary blue */
+  margin-top: 0;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.story-content {
+  display: flex;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  gap: 40px;
+  text-align: left;
+}
+
+.story-image {
+  width: 45%;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(46, 157, 247, 0.10);
+  flex-shrink: 0;
+}
+
+.story-content p {
+  width: 55%;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #222;
+}
+
+/* Call to Action Section */
+.call-to-action {
+  background-color: #FFC907; /* Primary Yellow */
+  color: #222;
+  text-align: center;
+  padding: 40px 20px;
+  border-radius: 12px;
+}
+
+.call-to-action h2 {
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+
+.donate-button {
+  background-color: #4FCB53; /* Green */
+  color: #fff;
+  padding: 14px 32px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1.1em;
+  box-shadow: 0 2px 8px rgba(79, 203, 83, 0.10);
+  transition: background 0.3s, transform 0.2s;
+  border: none;
+  cursor: pointer;
+}
+
+.donate-button:hover {
+  background-color: #159A48; /* Dark Green */
+  transform: translateY(-2px) scale(1.04);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 30px;
+}
+
+/* Responsive Design */
+
+/* Small screens (mobile) */
+@media (max-width: 600px) {
+  .hero {
+    padding: 40px 10px;
+    height: auto;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .donate-btn {
+    width: 100%;
+  }
+
+  .about {
+    padding: 40px 10px;
+    text-align: center;
+  }
+
+  /* Stack story image and text vertically on mobile */
+  .story-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .story-image {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .story-content p {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .call-to-action {
+    padding: 30px 10px;
+  }
+
+  .donate-button {
+    width: 100%;
+  }
+}
+
+/* Medium and up screens */
+@media (min-width: 601px) {
+  .story-content {
+    flex-direction: row;
+  }
+
+  .donate-btn, .donate-button {
+    width: auto;
+  }
+}
+
